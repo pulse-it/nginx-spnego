@@ -29,6 +29,7 @@ WORKDIR /src/nginx-${NGINX_VERSION}
 RUN set -x \
   && ./configure \
 # add modules to build with
+        --with-debug \
         --with-http_ssl_module \
         --with-http_gzip_static_module \
         --with-http_stub_status_module \
